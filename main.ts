@@ -3,6 +3,7 @@ import inquirer from "inquirer"
 var myBalance = 10000; // Dollar
 let myPin:number = 1997;  // Pin Code
 
+
 let pinAnswer =  await inquirer.prompt(
     [
         {
@@ -65,10 +66,10 @@ if (pinAnswer.pin === myPin) {
         // myBalance -= amountAns.amount;
         if (amountAns.amount <= myBalance) {
             myBalance -= amountAns.amount;
-            console.log("Your remaining balance is: " + myBalance);
+            console.log("Your balance is: " + myBalance);
         } else if (amountAns.amount > myBalance) {
             myBalance !== amountAns.amount;
-            console.log("you have not enough balance");
+            console.log("Insufficient Balance");
         };
 
 

@@ -46,15 +46,17 @@ if (pinAnswer.pin === myPin) {
                 }
             ]);
         }
+        ;
         // myBalance -= amountAns.amount;
         if (amountAns.amount <= myBalance) {
             myBalance -= amountAns.amount;
-            console.log("Your remaining balance is: " + myBalance);
+            console.log("Your balance is: " + myBalance);
         }
         else if (amountAns.amount > myBalance) {
             myBalance !== amountAns.amount;
-            console.log("you have not enough balance");
+            console.log("Insufficient Balance");
         }
+        ;
     }
     else if (operationAns.operation === "check balance") {
         console.log("Your balance is: " + myBalance);
@@ -64,3 +66,4 @@ if (pinAnswer.pin === myPin) {
 else {
     console.log("Incorrect pin number");
 }
+;
