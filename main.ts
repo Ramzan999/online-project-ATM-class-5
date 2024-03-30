@@ -1,3 +1,5 @@
+#! /usr/bin/env node
+
 import inquirer from "inquirer"
 
 var myBalance = 10000; // Dollar
